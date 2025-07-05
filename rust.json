@@ -1,0 +1,38 @@
+{
+  "single": {
+    "prefix": "single",
+    "body": ["use proconio::input;", "", "fn main() {", "\tinput! {", "\t\t$0", "\t}", "}"]
+  },
+  "multi": {
+    "prefix": "multi",
+    "body": ["use proconio::input;", "", "fn main() {", "\tinput!(t: usize);", "\t(0..t).for_each(|_| solve());", "}", "", "fn solve() {", "\tinput! {", "\t\t$0", "\t}", "}"]
+  },
+  "pl": {
+    "prefix": "pl",
+    "body": ["println!(\"{}\", $0);"]
+  },
+  "epl": {
+    "prefix": "epl",
+    "body": ["eprintln!(\"{:?}\", $0);"]
+  },
+  "pyes": {
+    "prefix": "pyes",
+    "body": ["println!(\"Yes\");"]
+  },
+  "pno": {
+    "prefix": "pno",
+    "body": ["println!(\"No\");"]
+  },
+  "p-1": {
+    "prefix": "p-1",
+    "body": ["println!(\"-1\");"]
+  },
+  "d4": {
+    "prefix": "d4",
+    "body": ["[(1, 0), (0, 1), (!0, 0), (0, !0)]"]
+  },
+  "d8": {
+    "prefix": "d8",
+    "body": ["[(1, 0), (1, 1), (0, 1), (!0, 1), (!0, 0), (!0, !0), (0, !0), (1, !0)]"]
+  }
+}
